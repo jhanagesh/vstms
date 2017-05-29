@@ -1,0 +1,204 @@
+body{margin:50px;}
+  #accordion .glyphicon { margin-right:10px; }
+  .panel-collapse>.list-group .list-group-item:first-child {border-top-right-radius: 0;border-top-left-radius: 0;}
+  .panel-collapse>.list-group .list-group-item {border-width: 1px 0;}
+  .panel-collapse>.list-group {margin-bottom: 0;}
+  .panel-collapse .list-group-item {border-radius:0;}
+
+  .panel-collapse .list-group .list-group {margin: 0;margin-top: 10px;}
+  .panel-collapse .list-group-item li.list-group-item {margin: 0 -15px;border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
+  .panel-collapse .list-group-item li.list-group-item:last-child {padding-bottom: 0;}
+
+  .panel-collapse div.list-group div.list-group{margin: 0;}
+  .panel-collapse div.list-group .list-group a.list-group-item {border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
+
+
+.font-collapce{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.panel-default :hover{
+    background-color: white !important;
+    padding-left: 2px;
+    
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/*Menu Company CSS*/
+.compheading{
+  color: dimgrey;
+  font-weight: 600;
+}
+.compdiv{
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.comp{
+  margin-left: 77px;
+  line-height: 0;
+}
+
+.pageheading{
+    float: right;
+    margin-top: -4px;
+        padding: 0px 10px;
+        word-spacing: -16px;
+}
+/*Dashbord header Css*/
+
+#custom-search-form {
+    margin:0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+#custom-search-form .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#custom-search-form button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.search-query:focus + button {
+    z-index: 3;   
+}
+
+.logout{
+	    color: #337ab7;
+		font-weight: 400;
+		cursor: pointer;
+}
+
+.panel-default-margin{
+	margin-bottom: -6px !important;
+}
+
+
+
+/*Add a Vendor/Supplier*/
+
+.vs-input-witdh{
+    padding: 0px 0px 0px 45px;
+    width: 50%;
+}
+
+.radio {
+    padding-left: 20px; }
+.radio label {
+    display: inline-block;
+    position: relative;
+    padding-right: 35px;
+    padding-left: 5px; }
+
+.radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out; }
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 3px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+.radio input[type="radio"] {
+    opacity: 0; }
+.radio input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); }
+.radio input[type="radio"]:disabled + label {
+    opacity: 0.65; }
+.radio input[type="radio"]:disabled + label::before {
+    cursor: not-allowed; }
+.radio.radio-inline {
+    margin-top: 0; }
+
+.radio-primary input[type="radio"] + label::after {
+    background-color: #428bca; }
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: #428bca; }
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: #428bca; }
+
+
+
+/*Dashboard Css*/
+
+.tablecolor{
+    background-color: whitesmoke;
+    border-radius: 11px;
+}
+
+
+
+
+
+/*SalesForm 1 CSS*/
+
+.salesform1{
+    width: 100%;
+}
+
+.bill{
+
+    width: 50%;
+    float: left;
+}
+
+.carepanter{
+    width: 50%;
+    float: right;
+}

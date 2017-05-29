@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html ng-app="tmsapp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VSTMS</title>
+<link rel="icon" type="image/jpg" href="vstms/images/titleicon.jpg">
+<script type="text/javascript" src="nglib/angular-v1.5.0.js"></script>
+<script type="text/javascript" src="nglib/angular-v1.5.0-route.js"></script>
+<script type="text/javascript" src="nglib/angular-v1.5.0-cookie.js"></script>
+<script type="text/javascript" src="nglib/sanitize-v1.5.0.js"></script>
+<script type="text/javascript" src="nglib/angular-v1.3.0-ui-route.js"></script>
+<script type="text/javascript" src=controllers/dashboardctrl.js></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="bootstrap/js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.js"></script>
+<!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- dashboard Css -->
+<link href="css/dashboard.css" rel="stylesheet">
+</head>
+<title>Home</title>
+
+</head>
+<body ng-controller="rootCtrl">
+<div class="row" style="margin-top:-4%;">
+<div class="">
+    <form id="custom-search-form" class="form-search form-horizontal pull-right">
+        <div class="input-append span12">
+            <input type="text" class="search-query" placeholder="Search">
+            <button type="submit" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-search"></span></button>
+            <span class="logout" ng-click="logoutfromvstms()">Logout
+            <span class="glyphicon glyphicon-log-out"></span></span>
+        </div>
+    </form>
+</div>
+</div>
+<hr>
+<div class="container">
+
+<div class="row" style="margin-top:-1.7%;">
+<div class="col-lg-3 col-md-4">
+<div class="panel-group" id="accordion">
+<div class="panel panel-default panel-default-margin">
+	<div class="panel-heading">
+    <h4 class="panel-title">
+      
+      <div class="compdiv">
+              <h2 class="compheading"><span style="color:#3b76aa;">L</span>OREMIP</h2>
+              <h5 class="comp compheading">company</h5>
+      </div>
+    </h4>
+  </div>
+	<div class="panel panel-default panel-default-margin"> 
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" ui-sref="dashboard" data-target="#dashboard"><span class="glyphicon glyphicon-dashboard pull-right">
+        </span><span class="font-collapce">Dashboard </span></a>
+    </h4>
+  </div>
+  </div>	
+</div>
+<div class="panel panel-default panel-default-margin">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" ui-sref="addvendersuppliers" data-target="#addvendersuppliers"><span class="glyphicon glyphicon-plus pull-right">
+        </span><span class="font-collapce">Add a Vender/Supplier<span></a>
+    </h4>
+  </div>
+  </div>
+  <div class="panel panel-default panel-default-margin">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#accounts"><span class="glyphicon glyphicon-chevron-down pull-right">
+        </span><span class="font-collapce">Accounts</span></a>
+    </h4>
+  </div>
+  <div id="accounts" class="panel-collapse collapse in">
+
+    <ul class="list-group">
+      <li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary "></span>
+      <a href="#salesforms">Sales</a>
+
+          <ul class="list-group">
+
+              <li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span><a ui-sref="salesform1" data-target="#salesform1">Sales form1</a></li>
+              <li class="list-group-item"><span class="glyphicon glyphicon-pencil text-primary"></span><a ui-sref="#" data-target="#">Sales form2</a></li>
+          </ul>
+
+      </li>
+      <li class="list-group-item"><span class="glyphicon glyphicon-flash text-success"></span><a href="#">Purchase</a></li>
+    </ul>
+  </div>
+ </div>
+
+<div class="panel panel-default panel-default-margin">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" ui-sref="additem" data-target="#additem"><span class="glyphicon glyphicon-gift pull-right">
+        </span><span class="font-collapce">Add Item</span></a>
+    </h4>
+  </div>
+</div>
+<div class="panel panel-default panel-default-margin">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" ui-sref="payments" data-target="#payments"><span class="glyphicon glyphicon-usd pull-right">
+        </span><span class="font-collapce">Payment</span></a>
+    </h4>
+  </div>
+</div>
+<div class="panel panel-default panel-default-margin">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" ui-sref="receipt" data-target="#receipt"><span class="glyphicon glyphicon-list-alt pull-right">
+        </span><span class="font-collapce">Receipt</span></a>
+    </h4>
+  </div>
+</div>
+</div>
+</div>
+<div class="col-sm-9 col-md-9">
+<div class="panel">
+<div class="">
+  <h3 class="panel-title" ng-bind-html="pageheading"></h3>
+</div>
+
+  <ui-view>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
